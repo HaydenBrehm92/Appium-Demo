@@ -1,0 +1,21 @@
+plugins {
+    id 'org.siouan.frontend-jdk11' version '8.0.0'
+    id "com.github.node-gradle.node" version "3.0.1"
+}
+
+task webpackdist(type: NodeTask, dependsOn: 'npmInstall') {
+    script = project(":frontend").file("/node_modules/webpack/bin/webpack.js")
+    def backendProjectBuild = project(":backend").buildDir
+    args = [
+            '--mode', 'development',
+            '--entry', "./src/index.js",
+            '-o', "${backendProjectBuild}/resources/main/static/dist"
+    ]
+}
+
+frontend {
+    nodeVersion = '20.11.0'
+    assembleScript = 'run build'
+    cleanScript = 'run clean'
+    checkScript = 'run check'
+}

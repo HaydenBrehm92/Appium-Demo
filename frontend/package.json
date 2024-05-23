@@ -1,0 +1,63 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "homepage": ".",
+  "private": true,
+  "packageManager": "npm@9.6.7",
+  "devDependencies": {
+    "@types/react-scroll-to-bottom": "^4.2.5",
+    "mkdirp": "~3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.3.2",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.8.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-to-bottom": "^4.2.0",
+    "style-loader": "^3.3.4",
+    "svg-inline-loader": "^0.8.2",
+    "ts-loader": "^9.5.1",
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "echo Building frontend && react-scripts build && mkdirp build/www && node config/config.js",
+    "check": "echo Checking frontend && npm run test",
+    "clean": "echo Cleaning frontend",
+    "test": "echo Testing frontend && react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8080"
+}

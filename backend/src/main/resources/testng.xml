@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing PTT app">
+    <!--<test name="BatchOne">
+        <packages>
+            <package name="tests.BasicPTT" />
+        </packages>
+    </test>-->
+    <test name="RecentCallTest">
+        <classes>
+            <class name="tests.BasicPTT.RecentCallTest">
+                <methods>
+                    <include name="CallTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="PtxMessagesTest">
+        <classes>
+            <class name="tests.BasicPTT.PtxMessagesTest">
+                <methods>
+                    <include name="MessagesTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TemplateTest">
+        <classes>
+            <class name="tests.BasicPTT.TemplateTest">
+                <methods>
+                    <include name="Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="LoginTest">
+        <classes>
+            <class name="tests.BasicPTT.LoginTest">
+                <methods>
+                    <include name="Login" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!--<test name="EEIEventsTest">
+        <classes>
+            <class name="tests.BasicPTT.EEIEventsTest">
+                <methods>
+                    <include name="Events" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+    <!--<test name="AddContactTest">
+        <classes>
+            <class name="tests.BasicPTT.AddContactTest">
+                <methods>
+                    <include name="AddContacts" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+    <!--<test name="HistoryLoadTest">
+        <classes>
+            <class name="tests.BasicPTT.HistoryLoadTest">
+                <methods>
+                    <include name="HistoryLoad" />
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+    <test name="EmergencyTest">
+        <classes>
+            <class name="tests.BasicPTT.EmergencyTest">
+                <methods>
+                    <include name="Emergency" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <app ID="ATT">
+        <appName>ATT</appName>
+        <packageName>com.att.eptt</packageName>
+        <engCode>288364</engCode>
+        <logCopy>563788</logCopy>
+    </app>
+    <app ID="VZW">
+        <appName>Verizon</appName>
+        <packageName>com.verizon.pushtotalkplus</packageName>
+        <engCode>899364</engCode>
+        <logCopy>899788</logCopy>
+    </app>
+    <app ID="WOC">
+        <appName>Wave</appName>
+        <packageName>com.motorolasolutions.waveoncloudptt</packageName>
+        <engCode>563364</engCode>
+        <logCopy>563674</logCopy>
+    </app>
+    <app ID="SDC">
+        <appName>T-Mobile</appName>
+        <packageName>com.sprint.sdcplus</packageName>
+        <engCode>832364</engCode>
+        <logCopy>732788</logCopy>
+    </app>
+    <app ID="BELL">
+        <appName>Bell</appName>
+        <packageName>com.bell.ptt</packageName>
+        <engCode>235364</engCode>
+        <logCopy>235788</logCopy>
+    </app>
+    <!-- Add more supported apps as needed, follow the same format as the existing apps seen above -->
+</config>
